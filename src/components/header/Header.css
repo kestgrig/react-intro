@@ -1,0 +1,28 @@
+.mainHeader {
+    display: flex;
+    padding: 1rem 2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 3rem;
+    width: 5rem;
+    object-fit: contain;
+    object-position: left;
+}
+
+.nav {
+    display: flex;
+    gap: 1rem;
+}
+
+.link {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #333;
+}
+
+.link:hover {
+    color: blue;
+}
