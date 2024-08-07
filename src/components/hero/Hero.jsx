@@ -22,7 +22,7 @@ export function Hero () {
         <div className={style.btnList}>
           <Button url="#" text="Get Started" />
           <Button url="#" text="Why Vite?" />
-          <Button url="#" text="Viem on GitHub" />
+          <Button url="#" text="View on GitHub" />
           <Button url="#" text="⚡ViteConf 24!" />
         </div>
       </div>
