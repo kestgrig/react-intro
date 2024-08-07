@@ -6,6 +6,7 @@ export function Header() {
     return (
         <header className="mainHeader">
             <img className='logo' src={logo} alt="Logo" />
+            <p className='vite'>Vite</p>
             <nav className='nav'>
                 <a className='link' href="#">Guide</a>
                 <a className='link' href="#">Config</a>

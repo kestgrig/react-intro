@@ -1,10 +1,12 @@
 import imageVite from '/vite.svg'
-import './Hero.css'
+import style from'./Hero.module.css'
+import { Button } from '../button/Button';
 
 
 export function Hero () {
   const imgStyle = {
-    height: '15rem',
+    height: '24rem',
+    width: '100%',
   };
 
   const title = Math.random() > 0.5 
@@ -13,18 +15,18 @@ export function Hero () {
 
 
   return (
-    <section>
-      <div>
-        <h1>{title}</h1>
-        <p>Get ready for a development environment that can finally catch up with you.</p>
-        <div>
-          <a href="#">Get Started</a>
-          <a href="#">Why Vite?</a>
-          <a href="#">Viem on GitHub</a>
-          <a href="#">⚡ViteConf 24!</a>
+    <section className={style.hero}>
+      <div className={style.textContent}>
+        <h1 className={style.title}>{title}</h1>
+        <p className={style.description}>Get ready for a development environment that can finally catch up with you.</p>
+        <div className={style.btnList}>
+          <Button url="#" text="Get Started" />
+          <Button url="#" text="Why Vite?" />
+          <Button url="#" text="Viem on GitHub" />
+          <Button url="#" text="⚡ViteConf 24!" />
         </div>
       </div>
-      <img className="imageVite" src={imageVite} style={imgStyle}  alt="Vite image" />
+      <img src={imageVite} style={imgStyle}  alt="Vite image" />
     </section>
   );
 }
@@ -33,3 +35,5 @@ export function Hero () {
 
 // CSS: style = "background-color: red; font-size: 16px";
 // React: style = {{backgroundColor: 'red', fontSize: '16px'}};
+
+// statinis stilius {style.hero + 'red'}, red index.css faile;

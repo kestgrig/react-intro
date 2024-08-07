@@ -12,6 +12,13 @@
     object-position: left;
 }
 
+.vite {
+    color: rgb (60, 60, 67);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-left: -1050px;
+}
+
 .nav {
     display: flex;
     gap: 1rem;
