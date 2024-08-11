@@ -1,17 +1,17 @@
-import imageVite from '/vite.svg'
+import Logo from '/public/vite.svg'
 import style from'./Hero.module.css'
 import { Button } from '../button/Button';
 
 
 export function Hero () {
-  const imgStyle = {
-    height: '24rem',
-    width: '100%',
-  };
+  // const imgStyle = {
+  //   height: '28rem',
+  //   width: '90%',
+  // };
 
   const title = Math.random() > 0.5 
     ? 'Vite Next Generation Frontend Tooling'
-    : 'Well Done';
+    : 'Vite';
 
 
   return (
@@ -26,7 +26,7 @@ export function Hero () {
           <Button url="#" text="⚡ViteConf 24!" />
         </div>
       </div>
-      <img src={imageVite} style={imgStyle}  alt="Vite image" />
+      <img className='imgViteLogo'  src={Logo}  alt="Vite image" />
     </section>
   );
 }
